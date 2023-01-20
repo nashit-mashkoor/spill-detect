@@ -1,0 +1,17 @@
+# Spillage Detect
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /home/ignitor/Personal/spill-detect/ai-module/data/train  
+val: /home/ignitor/Personal/spill-detect/ai-module/data/test  
+test: /home/ignitor/Personal/spill-detect/ai-module/data/test
+
+# number of classes
+nc: 6
+
+# class names
+names: [ 'water',
+          'tea',
+          'juice',
+          'blackoil',
+          'cookingoil',
+          'milk' ]
