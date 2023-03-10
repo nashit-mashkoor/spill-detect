@@ -63,8 +63,8 @@ if not image_file:
 
 url = 'https://predict.app.landing.ai/inference/v1/predict?endpoint_id=296fe792-9d60-457e-9637-a6031f54fe4b'
 headers = {
-    'apikey': st.secrets('api_key'),
-    'apisecret': st.secrets('api_secret')
+    'apikey': st.secrets['api_key'],
+    'apisecret': st.secrets['api_secret']
 }
 files = {
     'file': image_file
