@@ -73,7 +73,6 @@ response = requests.post(url, headers=headers, files=files)
 response = json.loads(response.content)
 image = Image.open(image_file)
 
-st.write(response)
 if response['backbonepredictions'] == {}:
     st.warning("No spillage")
     st.image(image)
